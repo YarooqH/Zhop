@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="82.0" prefWidth="1107.0" spacing="100.0" style="-fx-background-color: #0b0a07; -fx-border-color: #e5c893; -fx-border-radius: 100px;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.orderController">
+   <children>
+      <Label fx:id="itemName" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="21.0" prefWidth="190.0" text="Item Name" textFill="#e5c893">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="itemPrice" alignment="CENTER" layoutX="92.0" layoutY="42.0" maxWidth="1.7976931348623157E308" prefHeight="21.0" prefWidth="185.0" text="Item Price" textFill="#e5c893">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="itemQuantity" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="107.0" text="1" textFill="#e5c893">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+   <padding>
+      <Insets left="50.0" right="50.0" />
+   </padding>
+</HBox>

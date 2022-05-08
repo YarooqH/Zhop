@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #0b0a07; -fx-border-color: #e5c893;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.mainPageController">
+   <children>
+      <Pane prefHeight="67.0" prefWidth="1280.0" style="-fx-background-color: #0b0a07; -fx-border-color: #e5c893;">
+         <children>
+            <Text fill="#e5c893" layoutX="562.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zhop" textAlignment="CENTER" wrappingWidth="156.8033905029297">
+               <font>
+                  <Font name="Montserrat Medium" size="33.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="cartBtn" alignment="CENTER" contentDisplay="TOP" focusTraversable="false" layoutX="1204.0" layoutY="3.0" onAction="#changeScene" text="Cart" textFill="#e5c893">
+               <font>
+                  <Font name="Montserrat Medium" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="55.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/Cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="adminPanelBtn" contentDisplay="TOP" layoutY="4.0" onAction="#changeScene" text="Admin Panel" textFill="#e5c893">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/Admin.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Montserrat Medium" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutX="-2.0" layoutY="141.0" prefHeight="580.0" prefWidth="1284.0" style="-fx-background-color: #0b0a07; -fx-border-color: #e5c893;">
+         <content>
+            <VBox fx:id="itemsVBox" alignment="TOP_CENTER" prefHeight="583.0" prefWidth="1285.0" spacing="30.0" style="-fx-background-color: #0b0a07;" />
+         </content>
+      </ScrollPane>
+      <Label alignment="CENTER" layoutX="490.0" layoutY="77.0" prefHeight="50.0" prefWidth="299.0" text="Items Available" textFill="#e5c893">
+         <font>
+            <Font name="Montserrat Regular" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

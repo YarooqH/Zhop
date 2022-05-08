@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #0b0a07; -fx-border-color: #e5c893;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.customerDetailsController">
+   <children>
+      <Pane prefHeight="67.0" prefWidth="1280.0" style="-fx-background-color: #0b0a07; -fx-border-color: #e5c893;">
+         <children>
+            <Text fill="#e5c893" layoutX="567.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zhop" textAlignment="CENTER" wrappingWidth="156.8033905029297">
+               <font>
+                  <Font name="Montserrat SemiBold" size="33.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="goBackBtn" layoutX="11.0" layoutY="8.0" onAction="#changeScene" prefHeight="49.0" prefWidth="87.0" text=" " textFill="#e5c893">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Montserrat Medium" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="517.0" layoutY="75.0" prefHeight="50.0" prefWidth="269.0" text="Customer Details" textAlignment="CENTER" textFill="#e5c893">
+         <font>
+            <Font name="Montserrat Regular" size="30.0" />
+         </font>
+      </Label>
+      <Pane layoutX="-2.0" layoutY="139.0" prefHeight="581.0" prefWidth="1283.0" style="-fx-background-color: #E5C893;">
+         <children>
+            <JFXButton fx:id="submitBtn" layoutX="445.0" layoutY="445.0" onAction="#submitCustomerDetails" prefHeight="65.0" prefWidth="437.0" style="-fx-background-color: #0b0a07; -fx-text-fill: #E5C893;" text="Submit Details">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="customerFName" layoutX="255.0" layoutY="63.0" prefHeight="50.0" prefWidth="252.0" promptText="First Name" style="-fx-background-color: #0b0a07; -fx-text-fill: white;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="customerLName" layoutX="255.0" layoutY="163.0" prefHeight="50.0" prefWidth="252.0" promptText="Last Name" style="-fx-background-color: #0b0a07; -fx-text-fill: white;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="customerEmail" layoutX="535.0" layoutY="63.0" prefHeight="50.0" prefWidth="252.0" promptText="Email Address" style="-fx-background-color: #0b0a07; -fx-text-fill: white;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="customerPhoneNum" layoutX="535.0" layoutY="163.0" prefHeight="50.0" prefWidth="252.0" promptText="Phone Number" style="-fx-background-color: #0b0a07; -fx-text-fill: white;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="customerAddress" alignment="TOP_LEFT" layoutX="252.0" layoutY="248.0" prefHeight="161.0" prefWidth="825.0" promptText="Address " style="-fx-background-color: #0b0a07; -fx-text-fill: white;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="customerProvince" layoutX="819.0" layoutY="63.0" prefHeight="50.0" prefWidth="252.0" promptText="Province" style="-fx-background-color: #0b0a07; -fx-text-fill: white;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="customerCity" layoutX="819.0" layoutY="163.0" prefHeight="50.0" prefWidth="252.0" promptText="City" style="-fx-background-color: #0b0a07; -fx-text-fill: white;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

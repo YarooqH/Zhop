@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #0b0a07; -fx-border-color: #e5c893;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.adminInsertProductController">
+   <children>
+      <Pane prefHeight="67.0" prefWidth="1280.0" style="-fx-background-color: #0b0a07; -fx-border-color: #e5c893;">
+         <children>
+            <Text fill="#e5c893" layoutX="561.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zhop" textAlignment="CENTER" wrappingWidth="156.8033905029297">
+               <font>
+                  <Font name="Montserrat SemiBold" size="33.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="signOutBtn" contentDisplay="TOP" layoutX="11.0" layoutY="6.0" onAction="#changeScene" prefHeight="49.0" prefWidth="87.0" text="Signout" textFill="#e5c893">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/Signout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Montserrat Medium" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="525.0" layoutY="76.0" prefHeight="50.0" prefWidth="232.0" text="Enter An Item" textAlignment="CENTER" textFill="#e5c893">
+         <font>
+            <Font name="Montserrat Regular" size="30.0" />
+         </font>
+      </Label>
+      <Pane layoutX="-2.0" layoutY="139.0" prefHeight="581.0" prefWidth="1283.0" style="-fx-background-color: #E5C893;">
+         <children>
+            <TextField fx:id="itemName" layoutX="516.0" layoutY="148.0" prefHeight="38.0" prefWidth="245.0" promptText="Item Name" style="-fx-background-color: #0b0a07; -fx-text-fill: #E5C893;">
+               <font>
+                  <Font name="Montserrat Bold" size="14.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="submitItemsBtn" layoutX="521.0" layoutY="442.0" onAction="#submitItem" prefHeight="50.0" prefWidth="245.0" style="-fx-border-color: #0b0a07; -fx-background-color: #E5C893;" text="Submit Item">
+               <font>
+                  <Font name="Montserrat SemiBold" size="18.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="itemPrice" layoutX="516.0" layoutY="219.0" prefHeight="38.0" prefWidth="245.0" promptText="Item Price" style="-fx-background-color: #0b0a07; -fx-text-fill: #E5C893;">
+               <font>
+                  <Font name="Montserrat Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="601.0" layoutY="254.0" prefHeight="38.0" prefWidth="550.0">
+               <font>
+                  <Font name="Montserrat Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="itemSubmitIndication" alignment="CENTER" layoutX="452.0" layoutY="364.0" prefHeight="37.0" prefWidth="381.0" textFill="#07a81a">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="itemBrand" layoutX="517.0" layoutY="291.0" prefHeight="38.0" prefWidth="245.0" promptText="Item Brand" style="-fx-background-color: #0b0a07; -fx-text-fill: #E5C893;">
+               <font>
+                  <Font name="Montserrat Bold" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
